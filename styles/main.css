@@ -1,0 +1,376 @@
+:root {
+  /* almost black*/
+  --text-color: #444;
+
+  /* dark blue*/
+  --main-color-dark: #00008b;
+
+  /* blues **/
+  --main-color: #4444fa;
+  --main-color-light: #7cbed4;
+  --main-color-extra-light: #c4daec;
+
+  /* blue background */
+  --highlight-color: #3d679e;
+
+  --page-background: #f0f0f0;
+
+  /* earth blue */
+  --earth-blue: #1b3772;
+
+  /* ice walls */
+  --ice-walls: #0699b3;
+}
+img picture image {
+  width: 100%;
+}
+
+picture img {
+  width: 100%;
+}
+
+header svg {
+  stroke: #916247;
+  width: 60px;
+  height: 60px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/***** main classes  *****/
+
+/* hero image */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.25;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+h1,
+h2 {
+  font-family: "Arvo", serif;
+}
+
+.hero {
+  position: relative;
+  height: 80vh;
+}
+
+.hero .text-wrapper {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+
+  font-family: "Arvo", serif;
+  color: #ffe4c4;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 3rem;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+  letter-spacing: 2px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin: 0;
+  margin-bottom: 3rem;
+  margin-left: 2rem;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+/* fancy image CSS. Ignore plz */
+
+picture img {
+  height: 100%;
+  object-fit: cover;
+  object-position: left center;
+}
+
+.overlay {
+  position: absolute;
+  top: 15%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+}
+
+.text-group p,
+.text-group h1 {
+  color: var(--main-color-extra-light);
+}
+
+.text-group p {
+  display: none;
+}
+
+/* end of hero image */
+body {
+  color: var(--text-color);
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  background-color: var(--page-background);
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Fira Sans", sans-serif;
+  line-height: 1.2;
+  margin: 2em 0 0.5em;
+}
+
+h1 {
+  color: var(--main-color-dark);
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+h2,
+h3 {
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: var(--main-color-dark);
+}
+
+h3 {
+  font-size: 2rem;
+  color: var(--main-color);
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 50rem;
+  padding: 0 1rem;
+}
+
+figure {
+  margin: 4rem 0;
+}
+
+aside {
+  background-color: var(--highlight-color);
+  color: #fff;
+  margin-top: 6rem;
+  padding: 3rem 1rem;
+}
+
+aside h2 {
+  color: #fff;
+  margin: 0;
+}
+
+footer {
+  background-color: #5a5959;
+  clip-path: ellipse(78% 78% at 14% 83%);
+  color: #fff;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 2em;
+  margin-top: 12rem;
+  padding: 12rem 1rem 2rem;
+}
+
+footer p {
+  width: 50%;
+}
+
+picture img {
+  width: 100%;
+}
+
+a:link {
+  color: var(--earth-blue);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--main-color);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:not([href]):hover {
+  text-decoration: none;
+}
+
+a:active,
+a:focus {
+  background-color: var(--earth-blue);
+  color: #fff;
+}
+
+/***** utility styles *****/
+
+.button {
+  background-color: var(--main-color);
+  border-radius: 2px;
+  color: #fff;
+  display: inline-block;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 14px;
+  padding: 8px 15px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  margin-top: 1.5rem;
+
+  /* this makes it so the user can select the text, which keeps the cursor from turning into a text selection cursor */
+  user-select: none;
+}
+
+.button:hover {
+  background-color: var(--main-color-light);
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+}
+
+.button:active,
+.button:focus {
+  background-color: var(--main-color-extra-light);
+  box-shadow: 0 0 0 2px var(--main-color-dark) inset;
+  color: var(--main-color-dark);
+}
+
+/****** form styles  *****/
+.form img {
+  width: 400px;
+}
+
+.flip-card {
+  background-color: transparent;
+  /* width: 300px;
+  height: 300px; */
+  perspective: 1000px;
+  min-height: 180px;
+  flex: 1 1 auto;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1rem;
+}
+
+/* Positioning */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* text-align: left; */
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/*horizontal flip*/
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Positioning */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Front Side*/
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* back side */
+.flip-card-back {
+  background-color: var(--earth-blue);
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flip-card-back p {
+  padding: 0 1.5rem;
+}
+
+.flip-card-back h4 {
+  position: relative;
+  top: 45%;
+  margin: 0;
+  text-align: center;
+  color: var(--main-color-extra-light);
+}
+.load-container {
+  display: flex;
+  justify-content: center;
+}
+.loader {
+  border-radius: 50%;
+  width: 8rem;
+  height: 8rem;
+  border: 16px solid rgba(0, 0, 0, 0.4);
+  border-left: 16px solid #ffffff;
+  animation: load 1000ms infinite linear;
+}
+
+@keyframes load {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* >1100 */
+@media (min-width: 1101px) {
+  .text-group h1 {
+    font-size: 5rem;
+  }
+  .text-group p {
+    margin: 0;
+    display: block;
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+  .overlay {
+    position: absolute;
+    top: 5%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: start;
+    margin: 1.5rem;
+  }
+}
