@@ -344,6 +344,10 @@ a:focus {
   animation: load 1000ms infinite linear;
 }
 
+.svg-wrap {
+  width: 200px;
+}
+
 @keyframes load {
   0% {
     transform: rotate(0deg);
